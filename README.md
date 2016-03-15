@@ -26,12 +26,12 @@
 El objetivo de esta práctica es la utilización del polimorfismo para crear una jerarquía de clases e introducir el manejo de errores mediante el uso de excepciones.
 
 Para realizar esta práctica se utilizará y modificará el código generado en las dos primeras prácticas:
-* [**Practica1 ->**](noPage "Esto no está en un repositorio externo. Búscalo en este.) Implementación de estructuras de datos: *Vector, List, Stack y Queue*.
+* [**Practica1 ->**](http://noPage "Esto no está en un repositorio externo. Búscalo en este.) Implementación de estructuras de datos: *Vector, List, Stack y Queue*.
 
 * [**Práctica2 ->**][2] Implementación de una calculadora en notación postfija.
 
 
-[2]:(github.com/alu0100769609/aedaP2 "Ir al repositorio)
+[2]:(http://github.com/alu0100769609/aedaP2 "Ir al repositorio)
 
 
 ### Forma de uso
