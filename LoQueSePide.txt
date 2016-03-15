@@ -1,0 +1,8 @@
+* declarar clase nueva "numero" que va a ser abstracta
+* como herencia: int, racional, float, complejo
+* no hay que meter en la pila los números, sino punteros hacia los números
+
+1. Hacer clase número
+2. Hacer herencia y comprobar que la pila funcione con la herencia y los punteros
+3. Hacer excepciones
+4. (último) hacer una operacin aritmética (float.toInt, int.toRational, etc)

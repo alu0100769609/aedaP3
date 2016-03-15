@@ -1,0 +1,5 @@
+# Files to be excluded from the repository
+
+*.out    # Executable files
+*~       # Backup files
+*.txt    # Text files
