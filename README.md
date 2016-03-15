@@ -19,10 +19,10 @@
 * Para comprobar el funcionamiento del código escribir un programa que utilice las plantillas con datos de cualquier tipo de número a través de punteros a la clase base *Numero**.
 
 ### Objetivo
-El objetivo de esta práctica es la utilización del polimorfismo para crear una jerarquía de clases e introducir el manejo de errores mediante el uso de excepciones.
+El objetivo de esta práctica es la **utilización del polimorfismo** para crear una jerarquía de clases e introducir el **manejo de errores** mediante el uso de excepciones.
 
 Para realizar esta práctica se utilizará y modificará el código generado en las dos primeras prácticas:
-* [**Practica1 ->**](undefined) Implementación de estructuras de datos: *Vector, List, Stack y Queue*.
+* [**Practica1 ->**](http://github.com/alu0100769609/aedaP1) Implementación de estructuras de datos: *Vector, List, Stack y Queue*.
 
 * [**Práctica2 ->**](http://github.com/alu0100769609/aedaP2) Implementación de una calculadora en notación postfija.
 
@@ -31,29 +31,9 @@ Para realizar esta práctica se utilizará y modificará el código generado en 
 ### Forma de uso
 
 #### Compilación
-```bash
-$ g++ main/main.cpp -o main.out
-```
-```bash
-$ ./main.out
-```
+
 #### Ejecución
-* Para el ejemplo usando **int**: (3 + 2) * (5 - 7)
-```
- 3 2 + 5 7 - *
-```
-* Para el ejemplo usando **float**: (3.2 + 2.4) * (5 - 7.1)
-```
- 3.2 2.4 + 5 7.1 - *
-```
-* Para el ejemplo usando **complejo**: (3+2i + 2+4i) - (5+2i - 7+1i)
-```
- (3,2) (2,4) + (5,2) (7,1) - -
-```
-* Para el ejemplo usando **racional**: (3/2 + 2/4) * (7/1 - 5/1)
-```
- {3/2} {2/4} + {7/1} {5/1} - *
-```
+
 ### Autor
 
 * [Adexe Sabina Pérez](http://alu0100769609.github.io)
