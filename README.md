@@ -7,16 +7,12 @@
 
  La **clase *Numero* define** las operaciones, como mínimo:
    * **virtual const Entero toEntero() const = 0;** *Devuelve una copia del Numero actual en el tipo Entero*
-
-   * **virtual const Racional toRacional() const = 0;** *Devuelve una copia del Numero actual en el tipo Racional*
-
-   * **virtual const Real toReal() const = 0;** *Devuelve una copia del Numero actual en el tipo Real*
-
+   * **virtual const Racional toRacional() const = 0;** *Devuelve una copia del Numero actual en el tipo Racional*
+   * **virtual const Real toReal() const = 0;** *Devuelve una copia del Numero actual en el tipo Real*
    * **virtual const Complejo toComplejo() const = 0;** *Devuelve una copia del Numero actual en el tipo Complejo*
+   * **virtual ostream& toStream(ostream& sout) const = 0;** *Escribe un Numero al flujo*
+   * **virtual istream& fromStream(istream& sin) = 0;** *Lee un Numero desde flujo*
 
-   * **virtual ostream& toStream(ostream& sout) const = 0;** *Escribe un Numero al flujo sout*
-
-   * **virtual istream& fromStream(istream& sin) = 0;** *Lee un Numero desde flujo sin*
 
 * Manejar, mediante el mecanismo de las excepciones, las condiciones de error que se detectan en las implementaciones de las plantillas *(vector, Lista, Pila y cola)*, y en los tipos de números *(entero, racional, real y complejo)*.
 
@@ -26,12 +22,12 @@
 El objetivo de esta práctica es la utilización del polimorfismo para crear una jerarquía de clases e introducir el manejo de errores mediante el uso de excepciones.
 
 Para realizar esta práctica se utilizará y modificará el código generado en las dos primeras prácticas:
-* [**Practica1 ->**](http://noPage "Esto no está en un repositorio externo. Búscalo en este.) Implementación de estructuras de datos: *Vector, List, Stack y Queue*.
+* [**Practica1 ->**][] Implementación de estructuras de datos: *Vector, List, Stack y Queue*.
 
 * [**Práctica2 ->**][2] Implementación de una calculadora en notación postfija.
 
-
-[2]:(http://github.com/alu0100769609/aedaP2 "Ir al repositorio)
+[1]:()
+[2]:(http://github.com/alu0100769609/aedaP2)
 
 
 ### Forma de uso
