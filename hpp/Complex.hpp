@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-class Complejo {
-   friend class RPN<Complejo>;               //Allow class RPN to access method operator -
+class Complex {
+   friend class RPN<Complex>;               //Allow class RPN to access method operator -
 public:                       //Attributes
    double realPart;
    double imaginaryPart;
 
 public:                       //Default constructor & destructor
-   Complejo();                               //Default constructor
-   Complejo(double, double);                 //Overloaded constructor
-   ~Complejo();                              //Destructor
+   Complex();                               //Default constructor
+   Complex(double, double);                 //Overloaded constructor
+   ~Complex();                              //Destructor
 
 public:                       //Public access methods
    void setRealPart(double);
@@ -19,71 +19,71 @@ public:                       //Public access methods
    double getImaginaryPart() const;
 
 private:                      //Methods that can't be called from outside the class
-   Complejo operator +(const Complejo) const;
-   Complejo operator -(const Complejo) const;
-   Complejo operator *(const Complejo) const;
-   Complejo operator /(const Complejo) const;
-   Complejo operator -() const;
+   Complex operator +(const Complex) const;
+   Complex operator -(const Complex) const;
+   Complex operator *(const Complex) const;
+   Complex operator /(const Complex) const;
+   Complex operator -() const;
 };
 
 ////////////////////////////Methods////////////////////////////
 
-Complejo::Complejo() {
+Complex::Complex() {
    //By default
 }
 
-Complejo::Complejo(double realPart, double imaginaryPart) {
+Complex::Complex(double realPart, double imaginaryPart) {
    setRealPart(realPart);
    setImaginaryPart(imaginaryPart);
 }
 
-Complejo::~Complejo() {
+Complex::~Complex() {
    //By default
 }
 
-void Complejo::setRealPart(double realPart) {
+void Complex::setRealPart(double realPart) {
    this->realPart = realPart;
 }
 
-double Complejo::getRealPart() const {
+double Complex::getRealPart() const {
    return realPart;
 }
 
-void Complejo::setImaginaryPart(double imaginaryPart) {
+void Complex::setImaginaryPart(double imaginaryPart) {
    this->imaginaryPart = imaginaryPart;
 
 }
 
-double Complejo::getImaginaryPart() const {
+double Complex::getImaginaryPart() const {
    return imaginaryPart;
 }
 
-Complejo Complejo::operator +(const Complejo c2) const {
-   return (Complejo(getRealPart() + c2.getRealPart(), getImaginaryPart() + c2.getImaginaryPart()));
+Complex Complex::operator +(const Complex c2) const {
+   return (Complex(getRealPart() + c2.getRealPart(), getImaginaryPart() + c2.getImaginaryPart()));
 }
 
-Complejo Complejo::operator -(const Complejo c2) const {
-   return (Complejo(getRealPart() - c2.getRealPart(), getImaginaryPart() - c2.getImaginaryPart()));
+Complex Complex::operator -(const Complex c2) const {
+   return (Complex(getRealPart() - c2.getRealPart(), getImaginaryPart() - c2.getImaginaryPart()));
 }
 
-Complejo Complejo::operator -() const {
-   return (Complejo(-getRealPart(), -getImaginaryPart()));
+Complex Complex::operator -() const {
+   return (Complex(-getRealPart(), -getImaginaryPart()));
 }
 
-Complejo Complejo::operator *(const Complejo c2) const {
-   return (Complejo(getRealPart() * c2.getRealPart(), getImaginaryPart() * c2.getImaginaryPart()));
+Complex Complex::operator *(const Complex c2) const {
+   return (Complex(getRealPart() * c2.getRealPart(), getImaginaryPart() * c2.getImaginaryPart()));
 }
 
-Complejo Complejo::operator /(const Complejo c2) const {
-   return (Complejo(getRealPart() / c2.getRealPart(), getImaginaryPart() / c2.getImaginaryPart()));
+Complex Complex::operator /(const Complex c2) const {
+   return (Complex(getRealPart() / c2.getRealPart(), getImaginaryPart() / c2.getImaginaryPart()));
 }
 
-ostream& operator << (ostream& os, const Complejo& complejo) {
+ostream& operator << (ostream& os, const Complex& complejo) {
    os << "(" << complejo.getRealPart() << "+" << complejo.getImaginaryPart() << "i)";
    return os;
 }
 
-istream& operator >>(istream& is, Complejo& complejo) {
+istream& operator >>(istream& is, Complex& complejo) {
    is >> ws;                                 //Eat up any leading white spaces
                                              //Start of parse input
    int c = is.peek();                        //See next character

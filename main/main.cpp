@@ -1,6 +1,6 @@
 #include <cstdlib>      //system()
 #include "../hpp/RPN.hpp"
-#include "../hpp/Complejo.hpp"
+#include "../hpp/Complex.hpp"
 #include "../hpp/Rational.hpp"
 #include <iostream>
 
@@ -38,7 +38,7 @@ int main(void) {
             break;
          }
          case 3: {
-            RPN<Complejo> complexCalculator;
+            RPN<Complex> complexCalculator;
             complexCalculator.run();
             break;
          }
